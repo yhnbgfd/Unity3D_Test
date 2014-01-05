@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs">
     <Files>
       <File FileName="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs" Line="14" Column="39" />
