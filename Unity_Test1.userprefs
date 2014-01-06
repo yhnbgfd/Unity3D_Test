@@ -2,7 +2,9 @@
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs">
     <Files>
-      <File FileName="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs" Line="14" Column="39" />
+      <File FileName="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs" Line="24" Column="3" />
+      <File FileName="..\..\Exhibition-Hall\Assets\Plugins\script\LeapMotion\LMGesture.cs" Line="28" Column="1" />
+      <File FileName="..\..\Exhibition-Hall\Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="40" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
