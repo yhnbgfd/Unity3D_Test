@@ -1,9 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\Script\NavMesh.cs">
     <Files>
-      <File FileName="..\..\Exhibition-Hall\Assets\Plugins\script\NavMeshTest.cs" Line="28" Column="6" />
-      <File FileName="..\..\Exhibition-Hall\Assets\Plugins\script\LeapMotion\LMGesture.cs" Line="107" Column="4" />
+      <File FileName="Assets\Plugins\Script\NavMesh.cs" Line="9" Column="44" />
+      <File FileName="Assets\Plugins\Script\NavMesh.cs" Line="9" Column="44" />
+      <File FileName="Assets\Plugins\Script\LMGesture.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Script\LeapMotion.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Script\JSBridge.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
