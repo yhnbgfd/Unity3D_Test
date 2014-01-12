@@ -1,18 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using StoneAnt.LeapMotion;
+using System.Collections.Generic;
+using System;
 
 public class LMGesture {
-	private LeapMotion lm;
+	//private LeapMotion lm;
+	private LeapMotionParameter LMP;
 	private float mouseX = 0.0f;
 	private float mouseY = 0.0f;
 	private float introY = 0.0f;
 	
 	public LMGesture () {
-		lm = new LeapMotion();
+		//lm = new LeapMotion();
+		LMP = new LeapMotionParameter();
 	}
 	
 	public bool CheckLMConnection()
 	{
+		/*
 		if(lm.CheckLMConnection())
 		{
 			return true;
@@ -21,27 +27,29 @@ public class LMGesture {
 		{
 			return false;
 		}
+		*/
+		return true;
 	}
 	
 	public float MoveHorizontal()
 	{
-		Vector3 movePosition = lm.PalmPosition(0,0,0,0);
-		float x = movePosition.x;
-		return x;
+		//Vector3 movePosition = lm.PalmPosition(0,0,0,0);
+		//float x = movePosition.x;
+		return 0;
 	}
 	public float MoveVertical()
 	{
-		Vector3 movePosition = lm.PalmPosition(0,0,0,0);
-		float z = movePosition.z;
-		return z;
+		//Vector3 movePosition = lm.PalmPosition(0,0,0,0);
+		//float z = movePosition.z;
+		return 0;
 	}
 	
 	public float getMouseX() {
-		if(lm.getHandsNum() == 0 || lm.getFingersNum() > 2)
+		if(LMP.GetHandsNumber() == 0 || LMP.GetFingersNumber() > 2)
 		{
 			return 0.0f;
 		}
-		Vector3 lookPosition = lm.FingertipPosition();
+		Vector3 lookPosition = new Vector3(LMP.FingertipPosition().x,LMP.FingertipPosition().y, LMP.FingertipPosition().z);
 		if(lookPosition.x > 0)
 		{
 			if(lookPosition.x > 100)
@@ -97,16 +105,16 @@ public class LMGesture {
 	}
 	
 	public float getMouseY() {
-		if(lm.getHandsNum() == 0 || lm.getFingersNum() > 2)
+		if(LMP.GetHandsNumber() == 0 || LMP.GetFingersNumber() > 2)
 		{
 			return 0.0f;
 		}
-		if(lm.HandEnter())
-		{
-			introY = lm.FingertipPosition().y;
-		}
+		//if(lm.HandEnter())
+		//{
+		//	introY = lm.FingertipPosition().y;
+		//}
 		introY = 200.0f;
-		Vector3 lookPosition = lm.FingertipPosition();
+		Vector3 lookPosition = new Vector3(LMP.FingertipPosition().x,LMP.FingertipPosition().y, LMP.FingertipPosition().z);
 		if(lookPosition.y - introY > 50)
 		{
 			return 0.05f;
