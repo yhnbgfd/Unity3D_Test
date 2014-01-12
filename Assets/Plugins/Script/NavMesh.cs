@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using StoneAnt.LeapMotion;
 
 public class NavMesh : MonoBehaviour {
-	private LeapMotion lm;
+	//private LeapMotion lm;
+	private LeapMotionGesture LMG;
+	private LeapMotionParameter LMP;
 	private NavMeshAgent man;
 	private Transform target;
 	
@@ -15,14 +18,16 @@ public class NavMesh : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		man = gameObject.GetComponent<NavMeshAgent>();
-		lm = new LeapMotion();
+		//lm = new LeapMotion();
+		LMG = new LeapMotionGesture();
+		LMP = new LeapMotionParameter();
 		NextRoute = CurrentRoute;
 		target = GameObject.Find(CurrentRoute+"0").transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(lm.getFingersNum() == 5)
+		if(LMP.GetFingersNumber() == 5)
 		{
 			if(man.destination == man.nextPosition)//Stagnant
 			{
@@ -43,12 +48,12 @@ public class NavMesh : MonoBehaviour {
 				{
 					Debug.Log(CurrentRoute + " end");
 					StartWalking = false;
-					if(lm.Circle() == 1)
+					if(LMG.Circle() == 1)
 					{
 						Debug.Log("--->");
 						setNextRoute("c");
 					}
-					else if(lm.Circle() == 2)
+					else if(LMG.Circle() == 2)
 					{
 						Debug.Log("<---");
 						setNextRoute("b");
@@ -56,7 +61,7 @@ public class NavMesh : MonoBehaviour {
 				}
 			}
 		}
-		else if(lm.getFingersNum() < 4)
+		else if(LMP.GetFingersNumber() < 4)
 		{
 			man.SetDestination(man.nextPosition);
 			StartWalking = true;
