@@ -24,7 +24,7 @@ public class NavMesh : MonoBehaviour {
 		NextRoute = CurrentRoute;
 		target = GameObject.Find(CurrentRoute+"0").transform;
 	}
-	
+	/*
 	// Update is called once per frame
 	void Update () {
 		if(LMP.GetFingersNumber() == 5)
@@ -67,7 +67,28 @@ public class NavMesh : MonoBehaviour {
 			StartWalking = true;
 		}
 	}
-	
+*/
+
+	void Update () 
+	{
+		if(LMG.FingersExpand())
+		{
+			Debug.Log("FingersExpand");
+		}
+		if(LMG.FingersShrink())
+		{
+			Debug.Log("FingersShrink");
+		}
+		if(LMG.Circle() == 1)
+		{
+			Debug.Log("Circle 1");
+		}
+		if(LMG.Circle() == 2)
+		{
+			Debug.Log("Circle 2");
+		}
+	}
+
 	public void setNextRoute(string route)
 	{
 		CurrentRoute = route ;
