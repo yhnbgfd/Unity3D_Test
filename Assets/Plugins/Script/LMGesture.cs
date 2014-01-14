@@ -49,7 +49,7 @@ public class LMGesture {
 		{
 			return 0.0f;
 		}
-		Vector3 lookPosition = new Vector3(LMP.FingertipPosition().x,LMP.FingertipPosition().y, LMP.FingertipPosition().z);
+		Vector3 lookPosition = new Vector3(LMP.GetFingertipPosition().x,LMP.GetFingertipPosition().y, LMP.GetFingertipPosition().z);
 		if(lookPosition.x > 0)
 		{
 			if(lookPosition.x > 100)
@@ -114,7 +114,7 @@ public class LMGesture {
 		//	introY = lm.FingertipPosition().y;
 		//}
 		introY = 200.0f;
-		Vector3 lookPosition = new Vector3(LMP.FingertipPosition().x,LMP.FingertipPosition().y, LMP.FingertipPosition().z);
+		Vector3 lookPosition = new Vector3(LMP.GetFingertipPosition().x,LMP.GetFingertipPosition().y, LMP.GetFingertipPosition().z);
 		if(lookPosition.y - introY > 50)
 		{
 			return 0.05f;

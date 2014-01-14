@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StoneAntClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:StoneAnt.LeapMotion.LeapMotionGesture">
+            <summary>
+            LeapMotion 手势
+            </summary>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionGesture.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionGesture.EnableGesture">
+            <summary>
+            检查、设置LM的自带手势是否开启
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionGesture.Circle">
+            <summary>
+            画圈手势
+            顺时针返回：1
+            逆时针返回：2
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionInitialize.GetController">
+            <summary>
+            获取实例化的LM Controller
+            </summary>
+            <returns>Controller</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionInitialize.SetGesture">
+            <summary>
+            LM自带手势开启状态监测与开启
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionInitialize.ProcessFrame">
+            <summary>
+            获取当前帧
+            </summary>
+            <returns>Frame</returns>
+        </member>
+        <member name="T:StoneAnt.LeapMotion.LeapMotionParameter">
+            <summary>
+            获取LeapMotion各种参数
+            </summary>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionParameter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionParameter.GetHandsNumber">
+            <summary>
+            获取当前识别到的手的数量
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionParameter.GetFingersNumber">
+            <summary>
+            获取第一只手被识别出的手指数量
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionParameter.GetPalmPosition">
+            <summary>
+            获取第一只手手掌的坐标
+            </summary>
+            <returns>Vector</returns>
+        </member>
+        <member name="M:StoneAnt.LeapMotion.LeapMotionParameter.GetFingertipPosition">
+            <summary>
+            获取第一只手的第一根手指指尖的坐标
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
