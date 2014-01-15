@@ -87,6 +87,19 @@ public class NavMesh : MonoBehaviour {
 		{
 			Debug.Log("Circle 2");
 		}
+		if(LMG.Swipe("X") == 1)
+		{
+			Debug.Log("Swipe X 1");
+		}
+		if(LMG.Swipe("X") == 2)
+		{
+			Debug.Log("Swipe X 2");
+		}
+		if(LMG.Swipe("y") == 2)
+		{
+			Debug.Log("Swipe y 2");
+		}
+
 	}
 
 	public void setNextRoute(string route)
