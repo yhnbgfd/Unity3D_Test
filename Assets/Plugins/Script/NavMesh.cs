@@ -79,6 +79,7 @@ public class NavMesh : MonoBehaviour {
 		{
 			Debug.Log("FingersShrink");
 		}
+		/*
 		if(LMG.Circle() == 1)
 		{
 			Debug.Log("Circle 1");
@@ -87,6 +88,7 @@ public class NavMesh : MonoBehaviour {
 		{
 			Debug.Log("Circle 2");
 		}
+
 		if(LMG.Swipe("X") == 1)
 		{
 			Debug.Log("Swipe X 1");
@@ -95,11 +97,25 @@ public class NavMesh : MonoBehaviour {
 		{
 			Debug.Log("Swipe X 2");
 		}
+
+		if(LMG.Swipe("y") == 1)
+		{
+			Debug.Log("Swipe y 1");
+		}
 		if(LMG.Swipe("y") == 2)
 		{
 			Debug.Log("Swipe y 2");
 		}
-
+		*/
+		if(LMG.SwipeWithTwoHands("x") == 1)
+		{
+			Debug.Log("SwipeWithTwoHands X 1");
+		}
+		if(LMG.SwipeWithTwoHands("x") == 2)
+		{
+			Debug.Log("SwipeWithTwoHands X 2");
+		}
+		//Debug.Log(LMP.GetFingersID()[0]+" "+LMP.GetFingersID()[1]+" "+LMP.GetFingersID()[2]+" "+LMP.GetFingersID()[3]+" "+LMP.GetFingersID()[4]);
 	}
 
 	public void setNextRoute(string route)
